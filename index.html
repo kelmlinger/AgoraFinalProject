@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title> FITNESS FACTIONS - Login </title>
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body id="container">
+        <div class="loginContainer">
+            <span class="headingText"> FITNESS FACTIONS </span>
+            <br/>
+            <span id="subtext"> Please login to your account below </span>
+            <form action="./homepage.html" onsubmit="return validate()">
+            <input type="text" id="email" placeholder="Email" name="email" style = "margin-top: 25px;"/>
+            <br/>
+            <input type="password" id="password" placeholder="Password"/> 
+            <br/>              
+            <button class="submitButton" type="submit" onclick="validate()" > LOGIN </button>
+            </form>
+        </div>
+    </body>
+    <script>
+
+        function validate(){
+            let email = document.getElementById("email")
+            let password = document.getElementById("password")
+            if(email.value.match(/\S+@\S+/)){
+                
+                email.className = ""
+
+                if(password.value.length >= 8){
+                    password.className = ""
+                    console.log("success")
+                    document.location = "homepage.html";
+                    return true
+                }
+                else
+                {
+                    password.className = "incorrect"
+                    console.log("password too short")
+                    return false
+                }
+            }else{
+                email.className = "incorrect"
+                console.log("not a valid email address")
+                return false
+            }
+        }
+    </script>
+    <script src="agoraRtc.js"> </script>
+</html>

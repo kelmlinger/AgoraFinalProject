@@ -1,0 +1,201 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#container{
+    background-color: rgb(46, 46, 46);
+}
+
+.loginContainer {
+    background-color: rgb(255, 34, 34);
+    text-align: center;
+    align-items: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding-top: 70px;
+    width: 50vw;
+    height: 50vh;
+    box-shadow: 10px 40px 50px rgba(0, 0, 0, 0.13);
+}
+
+.headingText {
+    font-size: xx-large;
+    color:whitesmoke;
+    font-style: bold;
+}
+
+#subtext {
+    color: whitesmoke;
+}
+
+input{
+    font-family: 'Quicksand', sans-serif;
+    font-style: bold;
+    margin-top: 15px;
+    padding: 10px;
+    width: 70%;
+    font-size: 1.05rem;
+}
+.submitButton{
+    background-color: rgb(255, 34, 34);
+    font-family: 'Quicksand', sans-serif;
+    font-style: bold;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: whitesmoke;
+    border: none;
+    font-size: 1.25rem;
+    border-radius: 10px;
+}
+
+#home {
+    background-color: rgb(46, 46, 46);
+}
+
+.left-pane {
+    width: 20vw;
+    height: 100vh;
+    background-color:rgb(46, 46, 46);
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.sideBarContainer {
+    width: 50px;
+    height: 50px;
+    padding-right: 16vw;
+    padding-bottom: 30px;
+}
+
+.sideBarText {
+    padding-top: 0px;
+    margin-top: 0px;
+    color: whitesmoke;
+    font-size: 1.05rem;
+    background-color: rgb(46, 46, 46);
+    text-align: left;
+    border: none;
+}
+
+#profile {
+    background-color: rgb(255, 34, 34);
+    flex-direction: row;
+}
+
+#right-pane {
+    flex: 1;
+    text-align: center;
+    align-items: center;
+}
+
+#profileContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 30vw;
+    height: 100vh;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    box-shadow: 10px 0px 100px;
+    /*justify-items: center;*/
+    margin-bottom: 60px;
+    align-items: top;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#profileImageContainer {
+    /*margin: auto;*/
+    padding-left: 40px;
+    padding-right: 40px;
+    align-items: center;
+    width: 20vw;
+}
+
+#image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+#profileText {
+    text-align: left;
+}
+
+#trainer {
+    background-color: rgb(255, 34, 34);
+}
+
+.chatText {
+    color: whitesmoke;
+}
+
+#SelfStream{
+    margin-top: 20px;
+    background-color: whitesmoke;
+    /*margin-left: 50px;*/
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-self: center;
+    box-shadow: 10px 0px 100px;
+    width: 600px;
+    height: 400px;
+}
+
+.remoteStream{
+    /*margin-left: 50px;*/
+    flex-direction: row;
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+    justify-self: center;
+    background-color: whitesmoke;
+    box-shadow: 10px 0px 100px;
+    width: 300px;
+    height: 200px;
+}
+
+#participantList {
+    color: whitesmoke;
+}
+
+.right-container{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    flex-direction: row;
+    /*align-items: center;*/
+}
+
+.controls{
+    justify-self: end;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-bottom: 0px;
+    height: 100px;
+    width: 600px;
+    background-color: rgb(46, 46, 46);
+    box-shadow: 10px 0px 100px;
+}
+
+.icon {
+    height: 40px;
+    width: 50px;
+    margin: 20px;
+    cursor: pointer;
+}
